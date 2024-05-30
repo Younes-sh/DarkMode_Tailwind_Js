@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark {
+    background-color: black;
+}
+
+
+.Container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Col {
+    width: 100%;
+    padding: 12px;
+    margin: 2px;
+}
+
+
+@media screen and (min-width: 576px) {
+    .Col {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Col {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .Col {
+        width: 33.33%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Col {
+        width: 25%;
+    }
+}
